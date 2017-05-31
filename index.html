@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<script src="js/swiper-3.4.2.min.js"></script>
+</head>
+<body>
+	<!-- 头部内容 -->
+	<div class="header clearfix">
+		<div class="hea-l fl">
+			<img src="img/logo.png" alt="">
+		</div>
+		<div class="hea-r fr">
+			<img src="img/phone.png" alt="">
+			010-84845085
+		</div>	
+	</div>
+	<!--大图滚动  -->
+	<div class="main-pic">
+		<div class="swiper-container">
+   		 <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/index-main.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/main.png" alt=""></div>
+    </div>
+	</div>
+	</div>
+
+	<!--搜索  -->
+	<div class="search">
+		<span class="sea-l">找资金 <img src="img/sanjiao.png" alt=""></span>
+	<input type="text" class="search-in" value="请输入要搜索的关键词">
+	<span class="sea-r"><img src="img/search.png" alt=""></span>
+	</div>
+	<!-- 主要内容 -->
+	<div class="main-con">
+		<div class="main-login">
+			<img src="img/login.png" alt="">
+			<p>登录/注册</p>
+			
+		</div>
+		<ul class="con-list clearfix">
+			<li>
+			<img src="img/zhaozijin.png" alt="">
+				<p>找资金</p>
+			</li>
+			<li>
+				<img src="img/zhaoxiangmu.png" alt="">
+				<p>选项目</p>
+			</li>
+			<li>
+				<img src="img/mengfuwu.png" alt="">
+				<p>盟服务</p>
+			</li>
+			<li>
+				<img src="img/mengxueyuan.png" alt="">
+				<p>梦学院</p>
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		// 自动适应屏幕
+		 (function (doc, win) {
+		        var docEle = doc.documentElement,
+		                resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+		        var recalCulate = function () {
+		            var width = docEle.clientWidth;
+		            docEle.style.fontSize = 100 * (width / 640) + 'px';
+		        };
+		        recalCulate();
+		
+		        if (!doc.addEventListener) return;
+		        win.addEventListener(resizeEvent, recalCulate, false);
+		    })(document, window);
+		    
+		    // swiper插件
+		     var mySwiper = new Swiper ('.swiper-container', {
+   			 direction: 'horizontal',
+   			 loop: true,
+   			 autoplay: 2000,//可选选项，自动滑动
+  			})        
+
+
+
+	</script>
+</body>
+</html>

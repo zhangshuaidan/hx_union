@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项目</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/choice.css">
+</head>
+<body>
+
+	<!-- 头部内容 -->
+	<div class="header clearfix">
+			<img src="img/house.png" alt="" class="fl">
+			<img src="img/touxiang.png" alt="" class="fr">
+			选项目
+	</div>
+	<p class="line"></p>
+	<!--导航栏  -->
+	<div class="nav">
+		<ul class="nav-list clearfix">
+				<li class="active">综合排序</li>
+				<li>更新时间</li>
+				<li>条件筛选<img src="img/shaixuan.png" alt=""></li>
+			</ul>	
+		<div class="huadong"></div>
+	</div>
+	<!-- 搜索 -->
+	<div class="search">
+		<input type="text" class="search-in" value="请输入要搜索的关键词">
+		<span class="sea-r"><img src="img/search.png" alt=""></span>
+	</div>
+
+	<!-- 主体图片 -->
+	<div class="main-con">
+		<ul>
+			<li>
+			<img src="img/rongzi1.png" alt="">
+				<ul class="det-list">
+					<li>盟易融</li>
+					<li>河北省某国企控股物流公司融资</li>
+					<li>融资金额：<span class="li-r">30000万</span>
+					<span>所在地区：河北省</span>
+					<span>融资类型：其他融资</span>
+					</li>
+					<li>
+						<a href="" class="yuetan"> 约谈项目方</a>
+						<a href="" class="lianxi">
+							查看联系方式
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<img src="img/rongzi2.png" alt="">
+				<ul class="det-list">
+					<li>盟易融</li>
+					<li>河北省某国企控股物流公司融资</li>
+					<li>融资金额：<span class="li-r">30000万</span>
+					<span>所在地区：河北省</span>
+					<span>融资类型：其他融资</span>
+					</li>
+					<li>
+						<a href="" class="yuetan"> 约谈项目方</a>
+						<a href="" class="lianxi">
+							查看联系方式
+						</a>
+					</li>
+				</ul>
+			</li>
+			</li>
+			<li>
+				<img src="img/rongzi3.png" alt="">
+				<ul class="det-list">
+					<li>盟易融</li>
+					<li>河北省某国企控股物流公司融资</li>
+					<li>融资金额：<span class="li-r">30000万</span>
+					<span>所在地区：河北省</span>
+					<span>融资类型：其他融资</span>
+					</li>
+					<li>
+						<a href="" class="yuetan"> 约谈项目方</a>
+						<a href="" class="lianxi">
+							查看联系方式
+						</a>
+					</li>
+				</ul>
+			</li>
+			</li>
+		</ul>
+
+	</div>
+
+	<!-- 查看更多 -->
+	<div class="more">
+		点击查看更多
+	</div>
+	<!-- 底部内容 -->
+	<div class="footer">
+		<p class="f-1">
+			<span class="li-r">触屏版</span>
+			<span>电脑版</span>
+			<span>关于我们</span>
+		</p>
+		<p class="f-2">
+			<span>联系我们</span>
+			<span>建议与投诉</span>
+			<span>诚聘英才</span>
+		</p>
+		<p class="f-3"> copyright &copyright;	2016	北京华夏商盟版权所有 京ICP备16041114号 </p>
+	</div>
+	<script>
+			// 自动适应屏幕
+		 (function (doc, win) {
+		        var docEle = doc.documentElement,
+		                resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+		        var recalCulate = function () {
+		            var width = docEle.clientWidth;
+		            docEle.style.fontSize = 100 * (width / 640) + 'px';
+		        };
+		        recalCulate();
+		
+		        if (!doc.addEventListener) return;
+		        win.addEventListener(resizeEvent, recalCulate, false);
+		    })(document, window);
+		    
+		   
+
+	</script>
+</body>
+</html>
